@@ -20,5 +20,5 @@ export declare function createServer(requestListener: RequestListener, serverLis
 /** @deprecated Legacy support */
 export declare function proxy(server: AWSServerLess.Server, event: APIGatewayEvent, context: Context): AWSServerLess.Server;
 export declare function proxy(server: AWSServerLess.Server, event: APIGatewayEvent, context: Context, resolutionMode: "CONTEXT_SUCCEED" | "PROMISE"): { promise: Promise<AWSServerLess.Proxy> }
-export declare function proxy(server: AWSServerLess.Server, event: APIGatewayEvent, context: Context, resolutionMode: "CALLBACK", callback: (error, response) => any): { promise: Promise<AWSServerLess.Proxy> };
+export declare function proxy(server: AWSServerLess.Server, event: APIGatewayEvent, context: Context, resolutionMode: "CALLBACK", callback: (error: any, response: any) => any): { promise: Promise<AWSServerLess.Proxy> };
 
